@@ -1,0 +1,27 @@
+{
+  "name": "recipebook",
+  "version": "1.0.0",
+  "description": "Recipe web-app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macak410/recipe-web-app.git"
+  },
+  "keywords": [],
+  "author": "Tomislav Mačinković",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macak410/recipe-web-app/issues"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "parcel": "^2.15.1",
+    "sass": "^1.89.0"
+  }
+}
