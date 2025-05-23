@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700" />
+    <link rel="shortcut icon" href="src/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <title>RecipeBook || More than 1,000,000 recipes</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <img src="" alt="logo" class="header_logo" />
+            <form class="search">
+                <input 
+                type="text"
+                class="search_input"
+                placeholder="You can search for over 1,000,000 recipes..."
+                >
+                <button class="search_btn">
+                    <svg class="search_icon">
+                        <use href="#"></use>
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </form>
+
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <button class="nav_btn">
+                            <svg class="nav_icon">
+                                <use href="#"></use>
+                            </svg>
+                            <span>Add recipe</span>
+                        </button>
+                    </li>
+                    <li class="nav_item">
+                        <button class="nav_btn">
+                            <svg class="nav_icon">
+                                <use href="#"></use>
+                            </svg>
+                            <span>Bookmarks</span>
+                        </button>
+                        <div class="bookmarks">
+                            <ul class="bookmarks_list">
+                                <div class="message">
+                                    <div>
+                                        <svg>
+                                            <use href="#"></use>
+                                        </svg>
+                                    </div>
+                                    <p>No Bookmarks yet. Find something you like and bookmark it!</p>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="search-results">
+            <ul class="results">
+            </ul>
+
+            <div class="pagination">
+            </div>
+        </div>
+
+        <div class="recipe">
+            <div class="message">
+                <div>
+                    <svg>
+                        <use href="#"></use>
+                    </svg>
+                </div>
+                <p>Start by searching for your recipe or ingredient that you like!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="add_recipe_window">
+            <button class="btn">&times;</button>
+            <form id="form_upload" class="upload">
+                <div class="upload_column">
+                    <h3 class="upload_heading">Recipe Data</h3>
+                    <label>Title</label>
+                    <input value="Title" name="title" type="text" required />
+                    <label>URL</label>
+                    <input value="Url" name="sourceUrl" type="text" required />
+                    <label>Image</label>
+                    <input value="Image" name="image" type="text" required />
+                    <label>Publisher</label>
+                    <input value="Publisher" name="publisher" type="text" required />
+                    <label>Preparation time</label>
+                    <input value="Prep Time" name="preparationTime" type="text" required />
+                    <label>Servings</label>
+                    <input value="Servings" name="servings" type="text" required />
+                </div>
+
+                <div class="upload_column">
+                    <h3 class="upload_heading">Ingredients</h3>
+                    <label>1. Ingredient</label>
+                    <input 
+                    type="text" 
+                    value="###"
+                    name="1.ingredient"
+                    placeholder="format: 'quantity, unit, description'"
+                    required
+                    />
+                    <label>2. Ingredient</label>
+                    <input 
+                    type="text" 
+                    value="###"
+                    name="2.ingredient"
+                    placeholder="format: 'quantity, unit, description'"
+                    required
+                    />
+                    <label>3. Ingredient</label>
+                    <input 
+                    type="text" 
+                    value="###"
+                    name="3.ingredient"
+                    placeholder="format: 'quantity, unit, description'"
+                    required
+                    />
+                    <label>4. Ingredient</label>
+                    <input 
+                    type="text" 
+                    value="###"
+                    name="4.ingredient"
+                    placeholder="format: 'quantity, unit, description'"
+                    required
+                    />
+                    <label>5. Ingredient</label>
+                    <input 
+                    type="text" 
+                    value="###"
+                    name="5.ingredient"
+                    placeholder="format: 'quantity, unit, description'"
+                    required
+                    />
+                    <label>6. Ingredient</label>
+                    <input 
+                    type="text" 
+                    value="###"
+                    name="6.ingredient"
+                    placeholder="format: 'quantity, unit, description'"
+                    required
+                    />
+                </div>
+
+                <button class="btn">
+                    <svg>
+                        <use href="#"></use>
+                    </svg>
+                    <span>Upload</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
